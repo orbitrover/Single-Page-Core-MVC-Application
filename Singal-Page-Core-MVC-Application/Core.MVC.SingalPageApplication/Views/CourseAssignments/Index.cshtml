@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Core.MVC.SingalPageApplication.Models.CourseAssignment>
+
+@{
+    Layout = null;
+}
+
+<h4>Manage Course Assignment</h4>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Instructor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                <a asp-action="Create" data-modal="">Create New</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instructor.FirstMidName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CourseID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

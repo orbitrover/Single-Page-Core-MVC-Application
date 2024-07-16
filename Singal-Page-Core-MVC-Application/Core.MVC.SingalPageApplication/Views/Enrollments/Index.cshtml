@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Core.MVC.SingalPageApplication.Models.Enrollment>
+
+@{
+    Layout = null;
+}
+<h4>Manage Enrollments</h4>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student)
+            </th>
+            <th>
+                <a asp-action="Create" data-modal="">Create New</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CourseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.FirstMidName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EnrollmentID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EnrollmentID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EnrollmentID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

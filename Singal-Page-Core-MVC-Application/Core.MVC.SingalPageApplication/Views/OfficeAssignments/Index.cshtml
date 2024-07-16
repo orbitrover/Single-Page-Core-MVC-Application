@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Core.MVC.SingalPageApplication.Models.OfficeAssignment>
+
+@{
+    Layout = null;
+}
+<h4>Manage Office Assignments</h4>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Instructor)
+            </th>
+            <th>
+                <a asp-action="Create" data-modal="">Create New</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instructor.FirstMidName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InstructorID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.InstructorID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.InstructorID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

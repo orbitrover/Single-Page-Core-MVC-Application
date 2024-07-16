@@ -1,0 +1,15 @@
+﻿@model Core.MVC.SingalPageApplication.Models.Student
+
+@{
+    Layout = null;
+}
+
+<input type="hidden" id="header" value="Delete Student" />
+<p class="text-danger">@ViewData["ErrorMessage"]</p>
+<h3 class="text-danger">Are you sure you want to delete this?</h3>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="ID" />
+    <input type="submit" value="Delete" class="btn btn-danger" /> |
+
+</form>

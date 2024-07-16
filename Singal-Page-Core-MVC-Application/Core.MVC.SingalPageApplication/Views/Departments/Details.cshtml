@@ -1,0 +1,36 @@
+﻿@model Core.MVC.SingalPageApplication.Models.Department
+
+@{
+    Layout = null;
+}
+
+<input type="hidden" id="header" value="Department Detail" />
+<div>
+   
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Budget)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Budget)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Administrator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Administrator.FullName)
+        </dd>
+    </dl>
+</div>

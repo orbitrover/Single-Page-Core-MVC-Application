@@ -1,0 +1,25 @@
+﻿@model Core.MVC.SingalPageApplication.Models.OfficeAssignment
+
+@{
+    Layout = null;
+}
+<input type="hidden" id="header" value="Delete Office Assignment Detail" />
+
+<div>
+  
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Instructor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Instructor.FirstMidName)
+        </dd>
+    </dl>
+</div>
+

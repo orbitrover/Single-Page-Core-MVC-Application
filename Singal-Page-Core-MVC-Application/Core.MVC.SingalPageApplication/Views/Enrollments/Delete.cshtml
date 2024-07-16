@@ -1,0 +1,16 @@
+﻿@model Core.MVC.SingalPageApplication.Models.Enrollment
+
+@{
+    Layout = null;
+}
+
+<input type="hidden" id="header" value="Delete Enrollment" />
+<h3 class="text-danger">Are you sure you want to delete this?</h3>
+<div>
+   
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="EnrollmentID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        
+    </form>
+</div>

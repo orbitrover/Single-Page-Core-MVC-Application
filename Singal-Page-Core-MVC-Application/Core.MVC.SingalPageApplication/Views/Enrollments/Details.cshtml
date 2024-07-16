@@ -1,0 +1,31 @@
+﻿@model Core.MVC.SingalPageApplication.Models.Enrollment
+
+@{
+    Layout = null;
+}
+
+<input type="hidden" id="header" value="Enrollment Details" />
+<div>
+    
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Course.CourseID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Student)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Student.FirstMidName)
+        </dd>
+    </dl>
+</div>
+

@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Core.MVC.SingalPageApplication-6bcb317f-03cb-497d-bea6-222761e23a49</UserSecretsId>
+    <UserSecretsId>aspnet-Core.MVC.SinglePageApplication-6bcb317f-03cb-497d-bea6-222761e23a49</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 

@@ -1,8 +1,8 @@
-﻿using Core.MVC.SingalPageApplication.Models;
+﻿using Core.MVC.SinglePageApplication.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.MVC.SingalPageApplication.Data
+namespace Core.MVC.SinglePageApplication.Data
 {
     public class ApplicationDbContext : DbContext
     {

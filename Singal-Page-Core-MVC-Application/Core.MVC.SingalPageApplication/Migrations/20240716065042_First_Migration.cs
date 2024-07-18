@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Core.MVC.SingalPageApplication.Migrations
+namespace Core.MVC.SinglePageApplication.Migrations
 {
     /// <inheritdoc />
     public partial class First_Migration : Migration

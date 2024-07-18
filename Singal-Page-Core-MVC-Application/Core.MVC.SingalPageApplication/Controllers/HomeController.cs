@@ -5,13 +5,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Core.MVC.SingalPageApplication.Models;
+using Core.MVC.SinglePageApplication.Models;
 using Microsoft.EntityFrameworkCore;
-using Core.MVC.SingalPageApplication.Data;
-using Core.MVC.SingalPageApplication.Models.SchoolViewModels;
+using Core.MVC.SinglePageApplication.Data;
+using Core.MVC.SinglePageApplication.Models.SchoolViewModels;
 using System.Data.Common;
 
-namespace Core.MVC.SingalPageApplication.Controllers
+namespace Core.MVC.SinglePageApplication.Controllers
 {
     public class HomeController : Controller
     {

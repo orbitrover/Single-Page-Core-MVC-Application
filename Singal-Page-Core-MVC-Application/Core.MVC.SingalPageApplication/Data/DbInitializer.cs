@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
-using Core.MVC.SingalPageApplication.Models;
+using Core.MVC.SinglePageApplication.Models;
 
-namespace Core.MVC.SingalPageApplication.Data
+namespace Core.MVC.SinglePageApplication.Data
 {
     public static class DbInitializer
     {

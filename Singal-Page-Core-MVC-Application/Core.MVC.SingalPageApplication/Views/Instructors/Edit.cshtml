@@ -1,4 +1,4 @@
-﻿@model Core.MVC.SingalPageApplication.Models.Instructor
+﻿@model Core.MVC.SinglePageApplication.Models.Instructor
 
 @{
      Layout = null;
@@ -36,7 +36,7 @@
                         <tr>
                             @{
                                 int cnt = 0;
-                                List<Core.MVC.SingalPageApplication.Models.SchoolViewModels.AssignedCourseData> courses = ViewBag.Courses;
+                                List<Core.MVC.SinglePageApplication.Models.SchoolViewModels.AssignedCourseData> courses = ViewBag.Courses;
 
                                 foreach (var course in courses)
                                 {

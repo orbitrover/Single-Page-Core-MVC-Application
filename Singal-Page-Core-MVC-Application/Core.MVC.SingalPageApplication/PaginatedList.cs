@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Core.MVC.SingalPageApplication
+namespace Core.MVC.SinglePageApplication
 {
     public class PaginatedList<T> : List<T>
     {

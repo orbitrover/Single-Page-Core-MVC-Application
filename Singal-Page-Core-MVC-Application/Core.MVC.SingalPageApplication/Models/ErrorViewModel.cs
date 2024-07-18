@@ -1,4 +1,4 @@
-namespace Core.MVC.SingalPageApplication.Models
+namespace Core.MVC.SinglePageApplication.Models
 {
     public class ErrorViewModel
     {

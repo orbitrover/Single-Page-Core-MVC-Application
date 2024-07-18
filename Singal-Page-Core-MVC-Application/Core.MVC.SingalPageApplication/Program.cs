@@ -1,4 +1,4 @@
-using Core.MVC.SingalPageApplication.Data;
+using Core.MVC.SinglePageApplication.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Core.MVC.SingalPageApplication;
-using Core.MVC.SingalPageApplication.Data;
-using Core.MVC.SingalPageApplication.Models;
+using Core.MVC.SinglePageApplication;
+using Core.MVC.SinglePageApplication.Data;
+using Core.MVC.SinglePageApplication.Models;
 
-namespace Core.MVC.SingalPageApplication.Controllers
+namespace Core.MVC.SinglePageApplication.Controllers
 {
     public class EnrollmentsController : Controller
     {

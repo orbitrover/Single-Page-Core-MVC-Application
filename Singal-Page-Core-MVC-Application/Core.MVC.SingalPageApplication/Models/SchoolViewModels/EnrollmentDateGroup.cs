@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Core.MVC.SingalPageApplication.Models.SchoolViewModels
+namespace Core.MVC.SinglePageApplication.Models.SchoolViewModels
 {
     public class EnrollmentDateGroup
     {
